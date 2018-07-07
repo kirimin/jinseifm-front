@@ -1,0 +1,51 @@
+body {
+    background-color: gray;
+}
+.content {
+    position: absolute;
+    margin-left: 64px;
+    margin-right: 64px;
+    bottom: 0px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+p {
+    padding: 24px;
+    font-size: 24px;
+    color: white;
+    background: #00000055
+}
+
+a {
+    color: white;
+}
+
+@media screen and (max-width: 480px) { /* smart phones */
+    .content {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .background {
+        position: static;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    p {
+        padding: 16px;
+        font-size: 16px;
+        color: white;
+        background: #00000055
+    }
+    
+    a {
+        color: white;
+    }    
+}
